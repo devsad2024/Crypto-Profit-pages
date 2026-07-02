@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CryptoProfit — BTC Portfolio Tracker</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a href="index.html" class="active">Overview</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="license.html">License</a>
+  </nav>
+
+  <h1>CryptoProfit</h1>
+  <p class="tagline">BTC Portfolio Tracker</p>
+
+  <p>A mobile app for tracking Bitcoin purchases, deposits, and portfolio profit/loss over time, with optional read-only sync from Bybit. Available on <strong>iOS</strong> and <strong>Android</strong>.</p>
+
+  <h2>Features</h2>
+  <ul>
+    <li><strong>Deposits</strong> — log a pending deposit, then convert it into a BTC purchase at the historical price for that date</li>
+    <li><strong>Purchases</strong> — record BTC buys, edit or delete unsold entries, mark a purchase as sold to lock in realized P&amp;L</li>
+    <li><strong>Bybit sync</strong> — optionally connect a read-only Bybit API key to import your real deposit and trade history</li>
+    <li><strong>Live &amp; historical BTC price</strong> lookups</li>
+    <li><strong>Portfolio dashboard</strong> — overall P&amp;L, total invested, total BTC, average BTC purchase price</li>
+    <li><strong>P&amp;L history chart</strong> — interactive chart of portfolio value and profit/loss over time, in USD or ILS</li>
+  </ul>
+
+  <h2>How it works</h2>
+  <ul>
+    <li>Log a deposit, or import your history via <strong>Bybit sync</strong></li>
+    <li>Convert a pending deposit into a BTC purchase — the BTC price is fetched automatically for that date</li>
+    <li>Mark a purchase as <strong>sold</strong> to lock in realized P&amp;L at the sale-date price; unsold purchases track live unrealized P&amp;L</li>
+    <li>View the <strong>P&amp;L history</strong> screen for a full timeline of portfolio value and profit/loss</li>
+  </ul>
+
+  <div class="card">
+    <p style="margin:0">This is closed-source, proprietary software. The source code is not available for reuse, modification, or redistribution. See the <a href="license.html">License</a> for details, and the <a href="privacy.html">Privacy Policy</a> for how your data is handled.</p>
+  </div>
+
+  <footer>
+    &copy; 2026 Maxim Sadovnikov. All rights reserved.
+  </footer>
+</div>
+</body>
+</html>

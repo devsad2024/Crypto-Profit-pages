@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — CryptoProfit</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a href="index.html">Overview</a>
+    <a href="privacy.html" class="active">Privacy Policy</a>
+    <a href="license.html">License</a>
+  </nav>
+
+  <h1>Privacy Policy for CryptoProfit</h1>
+  <p class="meta">Last updated: July 2, 2026</p>
+
+  <p>Maxim Sadovnikov operates the CryptoProfit mobile application (the "App"). This Privacy Policy explains what information the App collects, how it is used, and your choices.</p>
+
+  <h2>Information We Collect</h2>
+
+  <h3>Account information</h3>
+  <p>Your email address and password, used solely to create and authenticate your account via Supabase, our backend provider. Your password is never stored in plain text — it is hashed using industry-standard hashing before storage.</p>
+
+  <h3>Financial records you enter</h3>
+  <p>Bitcoin purchase and deposit records you manually add or import: amounts, dates, fees, and computed BTC quantities/prices. This data exists solely to power the portfolio tracking and profit/loss calculations shown in the App, and is never shared with or sold to any third party.</p>
+
+  <h3>Bybit API credentials (optional)</h3>
+  <p>If you choose to connect a Bybit account, your API key and secret are sent to our server, where the secret is encrypted at rest (AES-256-GCM) before storage. We use it only to fetch your own deposit and trade history from Bybit's API on your behalf, so you can import it into your portfolio log. The App never requests withdrawal permissions and cannot place trades or move funds — we recommend creating a <strong>read-only</strong> Bybit API key when connecting.</p>
+
+  <h3>What we do NOT collect</h3>
+  <p>We do not collect your location, contacts, camera/photo data, or advertising identifiers. The App does not use any third-party analytics, advertising, or tracking SDKs.</p>
+
+  <h2>How We Use Your Information</h2>
+  <ul>
+    <li>To authenticate you and keep your portfolio data associated with your account.</li>
+    <li>To calculate and display your portfolio's profit/loss, purchase history, and related statistics.</li>
+    <li>To fetch live and historical BTC prices from Bybit's public market data (no personal data is sent for this — it's an unauthenticated, public price lookup).</li>
+    <li>To sync your deposit/trade history from Bybit when you explicitly request it, using your own API credentials.</li>
+  </ul>
+
+  <h2>Data Storage &amp; Security</h2>
+  <ul>
+    <li>All data is stored with Supabase (PostgreSQL) and accessed exclusively over encrypted HTTPS/TLS connections.</li>
+    <li>Row-level security policies ensure your data is readable only by your own authenticated account.</li>
+    <li>Session tokens are stored on your device encrypted, with the encryption key held in OS-level secure storage (iOS Keychain / Android Keystore).</li>
+    <li>Bybit API secrets are encrypted at rest (AES-256-GCM) using a server-held key that is never exposed to the app or its users.</li>
+  </ul>
+
+  <h2>Data Sharing</h2>
+  <p>We do not sell, rent, or share your personal or financial data with third parties for marketing purposes. Your data is only transmitted to:</p>
+  <ul>
+    <li><strong>Supabase</strong> — our database, authentication, and backend hosting provider.</li>
+    <li><strong>Bybit</strong> — only if you explicitly connect an API key, and only to read your own account's deposit/trade history on your behalf.</li>
+  </ul>
+
+  <h2>Your Rights</h2>
+  <ul>
+    <li><strong>Delete your account</strong> — go to <strong>Settings → Danger Zone → Delete Account</strong> in the App. This immediately and permanently deletes your account along with all associated purchases, deposits, and Bybit credentials. This action cannot be undone. As of this policy's last update, our database plan does not include automated backups, so no backup copies of your data persist after deletion.</li>
+    <li><strong>Access or correct your data</strong> — you may request a copy of your data, or ask us to correct it, at any time by contacting us at <strong><a href="mailto:maxsadovnikov77@gmail.com">maxsadovnikov77@gmail.com</a></strong>.</li>
+  </ul>
+
+  <h2>Children's Privacy</h2>
+  <p>CryptoProfit is not directed at, and is not intended for use by, children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Material changes will be reflected by updating the "Last updated" date above.</p>
+
+  <h2>Contact Us</h2>
+  <p>Questions about this Privacy Policy? Email us at <strong><a href="mailto:maxsadovnikov77@gmail.com">maxsadovnikov77@gmail.com</a></strong>.</p>
+
+  <footer>
+    &copy; 2026 Maxim Sadovnikov. All rights reserved.
+  </footer>
+</div>
+</body>
+</html>
