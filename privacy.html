@@ -30,7 +30,7 @@
   <p>Bitcoin purchase and deposit records you manually add or import: amounts, dates, fees, and computed BTC quantities/prices. This data exists solely to power the portfolio tracking and profit/loss calculations shown in the App, and is never shared with or sold to any third party.</p>
 
   <h3>Bybit API credentials (optional)</h3>
-  <p>If you choose to connect a Bybit account, your API key and secret are sent to our server, where the secret is encrypted at rest (AES-256-GCM) before storage. We use it only to fetch your own deposit and trade history from Bybit's API on your behalf, so you can import it into your portfolio log. The App never requests withdrawal permissions and cannot place trades or move funds — we recommend creating a <strong>read-only</strong> Bybit API key when connecting.</p>
+  <p>If you choose to connect a Bybit account, your API key and secret are sent to our server, where the secret is encrypted at rest (AES-256-GCM) before storage. We use it only to fetch your own deposit and trade history from Bybit's API on your behalf, so you can import it into your portfolio log. The App never requests withdrawal permissions and cannot place trades or move funds — we verify with Bybit that your key is <strong>read-only</strong> before saving it, and again every time it's used, and reject any key that has trading or withdrawal permissions.</p>
 
   <h3>What we do NOT collect</h3>
   <p>We do not collect your location, contacts, camera/photo data, or advertising identifiers. The App does not use any third-party analytics, advertising, or tracking SDKs.</p>
